@@ -1,11 +1,12 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
-class GlassContent extends StatelessWidget {
-  const GlassContent({
+class AboutUsTopText extends StatelessWidget {
+  const AboutUsTopText({
     Key key,
     @required this.size,
   }) : super(key: key);
@@ -21,11 +22,11 @@ class GlassContent extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
           constraints:
-              BoxConstraints(maxWidth: 1110, maxHeight: size.height * 0.7),
+          BoxConstraints(maxWidth: 1110, maxHeight: size.height * 0.7),
           width: double.infinity,
           color: Colors.white.withOpacity(0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Text(
@@ -35,38 +36,37 @@ class GlassContent extends StatelessWidget {
               //       .headline5
               //       .copyWith(color: Colors.white),
               // ),
-              Text(
-                "Digital Marketing",
-                style: TextStyle(
-                  fontSize: 100,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  height: 1.5,
+              Center(
+                child: Text(
+                  "ABOUT US",
+                  style: GoogleFonts.poppins(
+                    fontSize: 100,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    height: 1.5,
+                  ),
                 ),
               ),
               Text(
-                "FOR FREE",
-                style: Theme.of(context)
-                    .textTheme
-                    .headline5
-                    .copyWith(color: Colors.white),
+                "When Your Company Needs Sales Every And Bettery\n\tWhen Your Company Need.",
+                style: GoogleFonts.poppins(color: Colors.white)
               ),
               Padding( padding: EdgeInsets.symmetric(vertical: kDefaultPadding * 1.2),),
 
               ElevatedButton(
-                  onPressed: () {},
+                onPressed: () {},
 
-                  style: ElevatedButton.styleFrom(
+                style: ElevatedButton.styleFrom(
 
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
-                    ),
+                  shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0),
                   ),
-                  child:
-                      Text('TRY NOW FREE'),
-                      // Icon(Icons.change_circle)
+                ),
+                child:
+                Text('TRY NOW FREE'),
+                // Icon(Icons.change_circle)
 
-                  )
+              )
 
             ],
           ),

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:web_app/sections/about_us/about_us_mainscreen.dart';
+import 'package:web_app/sections/about_us/about_us_top.dart';
+import 'package:web_app/sections/case_studies/case_studies_mainscreen.dart';
+import 'package:web_app/sections/contact_us/contact_us_mainscreen.dart';
 
 import '../../../constants.dart';
 
@@ -12,11 +16,10 @@ class _MenuState extends State<Menu> {
   int hoverIndex = 0;
   List<String> menuItems = [
     "Home",
-    "Abour",
+    "About Us",
     "Services",
-    "Portfolio",
-    "Testimonial",
-    "Contact"
+    "Case Studies",
+    "Contact Us"
   ];
   @override
   Widget build(BuildContext context) {
@@ -46,6 +49,16 @@ class _MenuState extends State<Menu> {
         onTap: () {
           setState(() {
             selectedIndex = index;
+
+            if(menuItems[index]=="About Us"){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+            }
+            else  if(menuItems[index]=="Case Studies"){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>CaseStudiesMainScreen()));
+            }
+            else  if(menuItems[index]=="Contact Us"){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsMainScreen()));
+            }
           });
         },
         onHover: (value) {

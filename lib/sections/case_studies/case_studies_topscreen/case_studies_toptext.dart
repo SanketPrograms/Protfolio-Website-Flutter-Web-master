@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-class GlassContent extends StatelessWidget {
-  const GlassContent({
+class CaseStudiesTopText extends StatelessWidget {
+  const CaseStudiesTopText({
     Key key,
     @required this.size,
   }) : super(key: key);
@@ -21,11 +21,11 @@ class GlassContent extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
           constraints:
-              BoxConstraints(maxWidth: 1110, maxHeight: size.height * 0.7),
+          BoxConstraints(maxWidth: 1110, maxHeight: size.height * 0.7),
           width: double.infinity,
           color: Colors.white.withOpacity(0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Text(
@@ -35,17 +35,19 @@ class GlassContent extends StatelessWidget {
               //       .headline5
               //       .copyWith(color: Colors.white),
               // ),
-              Text(
-                "Digital Marketing",
-                style: TextStyle(
-                  fontSize: 100,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  height: 1.5,
+              Center(
+                child: Text(
+                  "Case Studies",
+                  style: TextStyle(
+                    fontSize: 100,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    height: 1.5,
+                  ),
                 ),
               ),
               Text(
-                "FOR FREE",
+                "When Your Company Needs Sales Every And Bettery\n\tWhen Your Company Need.",
                 style: Theme.of(context)
                     .textTheme
                     .headline5
@@ -53,20 +55,20 @@ class GlassContent extends StatelessWidget {
               ),
               Padding( padding: EdgeInsets.symmetric(vertical: kDefaultPadding * 1.2),),
 
-              ElevatedButton(
-                  onPressed: () {},
-
-                  style: ElevatedButton.styleFrom(
-
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
-                    ),
-                  ),
-                  child:
-                      Text('TRY NOW FREE'),
-                      // Icon(Icons.change_circle)
-
-                  )
+              // ElevatedButton(
+              //   onPressed: () {},
+              //
+              //   style: ElevatedButton.styleFrom(
+              //
+              //     shape: new RoundedRectangleBorder(
+              //       borderRadius: new BorderRadius.circular(30.0),
+              //     ),
+              //   ),
+              //   child:
+              //   Text('TRY NOW FREE'),
+              //   // Icon(Icons.change_circle)
+              //
+              // )
 
             ],
           ),
