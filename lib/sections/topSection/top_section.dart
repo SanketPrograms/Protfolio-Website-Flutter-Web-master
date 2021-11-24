@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:web_app/components/top_appbar.dart';
 import 'package:web_app/constants.dart';
 
 import 'components/logo_blur_box.dart';
@@ -26,16 +27,17 @@ class TopSection extends StatelessWidget {
         width: 1200,
         child: Stack(
           children: [
+            TopAppbar(),
             LogoAndBlurBox(size: size),
             // Positioned(
             //   bottom: 0,
             //   right: 0,
             //   child: PersonPic(),
             // ),
-            Positioned(
-              bottom: 0,
-              child: Menu(),
-            ),
+            // Positioned(
+            //   bottom: 0,
+            //   child: Menu(),
+            // ),
           ],
         ),
       ),

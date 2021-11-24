@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:web_app/components/top_appbar.dart';
 import 'package:web_app/constants.dart';
 import 'package:web_app/sections/about_us/top_section/about_us_toptext.dart';
 import 'package:web_app/sections/about_us/we_are_marketers/we_are_marker_card.dart';
@@ -29,7 +30,8 @@ class AboutUsTopSection extends StatelessWidget {
         child: Stack(
           children: [
            Column(
-             children: [
+             children:[
+             TopAppbar(),
                Spacer(),
                AboutUsTopText(size: size),
                Spacer(flex: 3),

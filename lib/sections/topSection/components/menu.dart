@@ -3,6 +3,7 @@ import 'package:web_app/sections/about_us/about_us_mainscreen.dart';
 import 'package:web_app/sections/about_us/about_us_top.dart';
 import 'package:web_app/sections/case_studies/case_studies_mainscreen.dart';
 import 'package:web_app/sections/contact_us/contact_us_mainscreen.dart';
+import 'package:web_app/sections/service/services_pages/services_mainscreen.dart';
 
 import '../../../constants.dart';
 
@@ -51,13 +52,15 @@ class _MenuState extends State<Menu> {
             selectedIndex = index;
 
             if(menuItems[index]=="About Us"){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUsHomeScreen()));
             }
             else  if(menuItems[index]=="Case Studies"){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>CaseStudiesMainScreen()));
             }
             else  if(menuItems[index]=="Contact Us"){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsMainScreen()));
+            }    else  if(menuItems[index]=="Services"){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesMainScreen()));
             }
           });
         },

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/constants.dart';
 import 'package:web_app/sections/about/about_section.dart';
+import 'package:web_app/sections/bottom_navigator/bottom_navigator.dart';
 import 'package:web_app/sections/contact/contact_section.dart';
 import 'package:web_app/sections/feedback/feedback_section.dart';
+import 'package:web_app/sections/homepage_we_offer/what_we_offer.dart';
 import 'package:web_app/sections/our_client/client_list.dart';
 import 'package:web_app/sections/recent_work/recent_work_section.dart';
 import 'package:web_app/sections/service/service_section.dart';
@@ -15,15 +17,18 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+
             TopSection(),
             SizedBox(height: kDefaultPadding * 2),
             AboutSection(),
-            ServiceSection(),
+            WhatWeOffer(),
+            // ServiceSection(),
             RecentWorkSection(),
             FeedbackSection(),
           //  ListWheelScrollViewX(),
             SizedBox(height: kDefaultPadding),
-            ContactSection(),
+            BottomNavigatorBar()
+          //  ContactSection(),
             // This SizeBox just for demo
             // SizedBox(
             //   height: 500,

@@ -12,7 +12,7 @@ import 'package:web_app/sections/topSection/components/person_pic.dart';
 
 
 
-class HomeScreen extends StatelessWidget {
+class AboutUsHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

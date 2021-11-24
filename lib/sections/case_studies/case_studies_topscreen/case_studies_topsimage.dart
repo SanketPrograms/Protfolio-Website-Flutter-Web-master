@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:web_app/components/top_appbar.dart';
 import 'package:web_app/constants.dart';
 import 'package:web_app/sections/about_us/top_section/about_us_toptext.dart';
 import 'package:web_app/sections/about_us/we_are_marketers/we_are_marker_card.dart';
@@ -19,9 +20,8 @@ class CaseStudiesTopImage extends StatelessWidget {
       constraints: BoxConstraints(maxHeight: 900, minHeight: 700),
       width: double.infinity,
       decoration: BoxDecoration(
-
         image: DecorationImage(
-          colorFilter: new ColorFilter.mode(Colors.purpleAccent.withOpacity(0.3), BlendMode.dstATop),
+       //   colorFilter: new ColorFilter.mode(Colors.purpleAccent.withOpacity(0.3), BlendMode.dstATop),
           fit: BoxFit.cover,
           image: AssetImage("images/homepage_background.jpg"),
         ),
@@ -31,6 +31,7 @@ class CaseStudiesTopImage extends StatelessWidget {
         width: 1200,
         child: Stack(
           children: [
+            TopAppbar(),
             Column(
               children: [
                 Spacer(),
