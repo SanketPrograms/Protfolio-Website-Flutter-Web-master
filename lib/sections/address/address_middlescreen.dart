@@ -218,75 +218,9 @@ class AddressMiddleScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  "Sanket Jadhav",style: GoogleFonts.poppins(
-                    color: Colors.black,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold
-                ),
-                ),
+
                 SizedBox(height: 5,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(
-                      "1/1 Item Selected",
-                      style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500
-                      ),
 
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Remove",
-                          style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500
-                          ),
-
-                        ),
-                        Text(
-                          "|",
-                          style: GoogleFonts.poppins(
-                              color: Colors.purpleAccent,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500
-                          ),
-
-                        ),
-                        Text(
-                          "Move to Wachlist",
-                          style: GoogleFonts.poppins(
-                              color: Colors.black,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w500
-                          ),
-
-                        ),
-                      ],
-                    ),
-                  ],),
-                SizedBox(height: 5,),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 50.0,vertical: 15),
-                  child: Card(
-                    elevation:10,
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: ListTile(
-                        title: Text("Product Name",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
-                        trailing: Text("25\$",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
-                        subtitle: Text("Product Description",style: GoogleFonts.poppins(fontSize: 12),),
-                        leading: Image.network("https://images.unsplash.com/photo-1637644807724-7bcbaf771892?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"),
-                      ),
-                    ),
-
-                  ),
-                )
 
               ],
             ),
@@ -356,20 +290,19 @@ class AddressMiddleScreen extends StatelessWidget {
                             fontWeight: FontWeight.w500
                         ),
                         ),
-                        Card(
-                          color: Colors.purpleAccent.shade100,
-                          child:      Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Center(
-                              child: Text(
-                                "ADD Gift Coupon",style: GoogleFonts.poppins(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold
+
+
+                             Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: ListTile(
+                                title: Text("Product Name",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
+                                trailing: Text("25\$",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
+                                subtitle: Text("Product Description",style: GoogleFonts.poppins(fontSize: 12),),
+                                leading: Image.network("https://images.unsplash.com/photo-1637644807724-7bcbaf771892?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"),
                               ),
-                              ),
-                            ),
-                          ),
+
+
+
                         ),
                         Text(
                           "Price Details",style: GoogleFonts.poppins(
@@ -499,7 +432,7 @@ class AddressMiddleScreen extends StatelessWidget {
                                   height: 35,
                                   child: ElevatedButton(
                                     child: Text(
-                                      'Place Order',
+                                      'Proceed',
                                       style: GoogleFonts.poppins(
                                           fontWeight: FontWeight.bold),
                                     ),
