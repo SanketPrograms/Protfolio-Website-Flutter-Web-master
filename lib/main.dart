@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/home_screen.dart';
+import 'package:web_app/sections/address/address_middlescreen.dart';
+import 'package:web_app/sections/payment/bag/bag_mainscreen.dart';
 
 void main(){
   runApp(myApp());
@@ -11,7 +13,8 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: HomeScreen(),
+      // body: HomeScreen(),
+        body: AddressMiddleScreen(),
       ),
     );
   }

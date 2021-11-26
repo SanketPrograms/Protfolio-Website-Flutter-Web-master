@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class bagMiddleScreen extends StatelessWidget {
-  const bagMiddleScreen({Key key}) : super(key: key);
+class AddressMiddleScreen extends StatelessWidget {
+  const AddressMiddleScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,35 +23,75 @@ class bagMiddleScreen extends StatelessWidget {
                       child: Row(
                         children: [
                           Expanded(
-                            flex: 3,
+                            flex: 1,
                             child: Text(
-                              "Check Your Delivery Time and Services",style: GoogleFonts.poppins(
+                              "Please Note",style: GoogleFonts.poppins(
                                 color: Colors.black,
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold
                             ),
                             ),
                           ),
-
-                          Card(
-                            elevation: 10,
-
-                            child:      Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 5.1,horizontal: 2),
-                              child: Center(
-                                child: Text(
-                                  "Enter Order No.",style: GoogleFonts.poppins(
-                                    color: Colors.black,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold
-                                ),
-                                ),
-                              ),
+                          Expanded(
+                            flex: 3,
+                            child: Text(
+                              "Check Your Delivery Time and Services",style: GoogleFonts.poppins(
+                                color: Colors.black,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500
+                            ),
                             ),
                           ),
+                          Expanded(
+                            flex: 1,
+                            child: Text(
+                              "Why?",style: GoogleFonts.poppins(
+                                color: Colors.purple,
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold
+                            ),
+                            ),
+                          ),
+
+
                         ],
                       ),
                     ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50.0,vertical: 10),
+
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 3,
+                        child: Text(
+                          "Select Order Address",style: GoogleFonts.poppins(
+                            color: Colors.black,
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold
+                        ),
+                        ),
+                      ),
+                      TextButton(
+                          child: Text(
+                              "Add New Address".toUpperCase(),
+                              style: GoogleFonts.poppins(fontSize: 14,fontWeight: FontWeight.bold)
+                          ),
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(15)),
+                              foregroundColor: MaterialStateProperty.all<Color>(Colors.purple.shade600),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      // borderRadius: BorderRadius.circular(18.0),
+                                      side: BorderSide(color: Colors.purple)
+                                  )
+                              )
+                          ),
+                          onPressed: () => null
+                      ),
+                    ],
                   ),
                 ),
                 Padding(
@@ -65,7 +105,7 @@ class bagMiddleScreen extends StatelessWidget {
                           Row(
                             children: [
                               Text(
-                                "Available Offers",style: GoogleFonts.poppins(
+                                "Sanket Jadhav",style: GoogleFonts.poppins(
                                   color: Colors.black,
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold
@@ -76,19 +116,114 @@ class bagMiddleScreen extends StatelessWidget {
                           SizedBox(height: 5,),
 
                           Text(
-                            "Check Your Delivery Time and Services Check Your Delivery Time and Services Check Your Delivery Time and Services Check Your Delivery Time and Services ",style: GoogleFonts.poppins(
+                            "Viman Nagar, Platinum Square,opposite to the WNS Company, Near Hyaat Hotel Pune - 431103 ",style: GoogleFonts.poppins(
                               color: Colors.black,
                               fontSize: 14,
                               fontWeight: FontWeight.w500
                           ),
 
                           ),
+                          SizedBox(height: 5,),
+                          Row(
+                            children: [
+                              Text(
+                                "Mobile  +9194034048884",style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w400
+                              ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 5,),
+                          Row(
+                            children: [
+                              Text(
+                                "Mail ID  Sanketjadhav@gmail.com",style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w400
+                              ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 5,),
+                           Row(
+                             children: [
+                                Text(
+                                   "Note  ",style: GoogleFonts.poppins(
+                                     color: Colors.purple,
+                                     fontSize: 13,
+                                     fontWeight: FontWeight.bold
+                                 ),
+                                 ),
 
+                               Expanded(
+                                 flex: 3,
+                                 child: Text(
+                                   "Check Your Delivery Time and Services",style: GoogleFonts.poppins(
+                                     color: Colors.black,
+                                     fontSize: 13,
+                                     fontWeight: FontWeight.w500
+                                 ),
+                                 ),
+                               ),
 
+                             ],
+                           ),
+                          Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Row(
+                              children: [
+                                TextButton(
+                                    child: Text(
+                                        "Remove".toUpperCase(),
+                                        style: GoogleFonts.poppins(fontSize: 14,fontWeight: FontWeight.bold)
+                                    ),
+                                    style: ButtonStyle(
+                                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(15)),
+                                        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                              // borderRadius: BorderRadius.circular(18.0),
+                                                side: BorderSide(color: Colors.black)
+                                            )
+                                        )
+                                    ),
+                                    onPressed: () => null
+                                ),
+                                SizedBox(width: 30,),
+                                TextButton(
+                                    child: Text(
+                                        "Edit".toUpperCase(),
+                                        style: GoogleFonts.poppins(fontSize: 14,fontWeight: FontWeight.bold)
+                                    ),
+                                    style: ButtonStyle(
+                                        padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(15)),
+                                        foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                            RoundedRectangleBorder(
+                                              // borderRadius: BorderRadius.circular(18.0),
+                                                side: BorderSide(color: Colors.black)
+                                            )
+                                        )
+                                    ),
+                                    onPressed: () => null
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
                   ),
+                ),
+                Text(
+                  "Sanket Jadhav",style: GoogleFonts.poppins(
+                    color: Colors.black,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold
+                ),
                 ),
                 SizedBox(height: 5,),
                 Row(
@@ -143,9 +278,9 @@ class bagMiddleScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: ListTile(
-                         title: Text("Product Name",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
-                         trailing: Text("25\$",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
-                         subtitle: Text("Product Description",style: GoogleFonts.poppins(fontSize: 12),),
+                        title: Text("Product Name",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
+                        trailing: Text("25\$",style: GoogleFonts.poppins(fontWeight: FontWeight.bold,fontSize: 16),),
+                        subtitle: Text("Product Description",style: GoogleFonts.poppins(fontSize: 12),),
                         leading: Image.network("https://images.unsplash.com/photo-1637644807724-7bcbaf771892?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"),
                       ),
                     ),

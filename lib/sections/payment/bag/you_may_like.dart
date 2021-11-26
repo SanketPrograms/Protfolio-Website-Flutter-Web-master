@@ -9,27 +9,35 @@ class YouMayLike extends StatelessWidget {
       children: [
 
         SizedBox(height: 50,),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Center(
-              child: Text(
-                "Our Team Members",
-                style: GoogleFonts.poppins(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.purpleAccent),
-              )),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                  child: Text(
+                    "You May Like",
+                    style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.purpleAccent),
+                  )),
+            ),
+          ],
         ),
-        Padding(
-          padding: const EdgeInsets.all(2.0),
-          child: Center(
-              child: Text(
-                "Our Team Members",
-                style: GoogleFonts.poppins(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
-              )),
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: Center(
+                  child: Text(
+                    "Our New Products",
+                    style: GoogleFonts.poppins(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  )),
+            ),
+          ],
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 80.0,vertical: 30),

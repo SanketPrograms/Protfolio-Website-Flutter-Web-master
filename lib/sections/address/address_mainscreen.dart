@@ -8,24 +8,24 @@ import 'package:web_app/sections/about_us/top_section/about_us_topsection.dart';
 import 'package:web_app/sections/about_us/we_are_marketers/background_image.dart';
 import 'package:web_app/sections/about_us/we_are_marketers/image_text.dart';
 import 'package:web_app/sections/about_us/why_choose_us/why_us_background_image.dart';
+import 'package:web_app/sections/address/address_middlescreen.dart';
 import 'package:web_app/sections/bottom_navigator/bottom_navigator.dart';
 import 'package:web_app/sections/case_studies/case_studies_middle/case_studies_middlecards.dart';
 import 'package:web_app/sections/case_studies/case_studies_topscreen/case_studies_topsimage.dart';
 import 'package:web_app/sections/our_client/client_list.dart';
 import 'package:web_app/sections/payment/bag/you_may_like.dart';
 
-import 'bag_middlescreen.dart';
 
 
 
-class BagMainScreen extends StatelessWidget {
+class AddressMainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            bagMiddleScreen(),
+            AddressMiddleScreen(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 100.0),
               child: Divider(
@@ -33,7 +33,7 @@ class BagMainScreen extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            YouMayLike(),
+
 
             BottomNavigatorBar()
 
