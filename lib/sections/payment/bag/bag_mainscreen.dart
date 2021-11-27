@@ -12,6 +12,7 @@ import 'package:web_app/sections/bottom_navigator/bottom_navigator.dart';
 import 'package:web_app/sections/case_studies/case_studies_middle/case_studies_middlecards.dart';
 import 'package:web_app/sections/case_studies/case_studies_topscreen/case_studies_topsimage.dart';
 import 'package:web_app/sections/our_client/client_list.dart';
+import 'package:web_app/sections/payment/bag/bag_topscreen.dart';
 import 'package:web_app/sections/payment/bag/you_may_like.dart';
 
 import 'bag_middlescreen.dart';
@@ -25,6 +26,7 @@ class BagMainScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            BagTop(),
             bagMiddleScreen(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 100.0),
@@ -35,7 +37,7 @@ class BagMainScreen extends StatelessWidget {
             ),
             YouMayLike(),
 
-            BottomNavigatorBar()
+        //    BottomNavigatorBar()
 
           ],
         ),

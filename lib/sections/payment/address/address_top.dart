@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BagTop extends StatelessWidget {
-  BagTop({Key key}) : super(key: key);
+class AddressTop extends StatelessWidget {
+  AddressTop({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +25,12 @@ class BagTop extends StatelessWidget {
                 children: [
                   Text("Bag - - - - - - - ",
                       style: GoogleFonts.poppins(
-                          color: Colors.purple,
+                          color: Colors.black,
                           fontSize: 12,
                           fontWeight: FontWeight.bold)),
                   Text("Address- - - - - - - ",
                       style: GoogleFonts.poppins(
-                          color: Colors.black,
+                          color: Colors.purple,
                           fontSize: 12,
                           fontWeight: FontWeight.bold)),
                   Text("Payment",

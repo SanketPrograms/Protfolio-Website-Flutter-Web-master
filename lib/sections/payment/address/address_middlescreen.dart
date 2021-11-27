@@ -94,6 +94,14 @@ class AddressMiddleScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 10,),
+                Text(
+                  "Default Address  ",style: GoogleFonts.poppins(
+                    color: Colors.purple.shade600,
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold
+                ),
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50.0,vertical: 10),
                   child: Card(
@@ -107,13 +115,13 @@ class AddressMiddleScreen extends StatelessWidget {
                               Text(
                                 "Sanket Jadhav",style: GoogleFonts.poppins(
                                   color: Colors.black,
-                                  fontSize: 14,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.bold
                               ),
                               ),
                             ],
                           ),
-                          SizedBox(height: 5,),
+                          SizedBox(height: 10,),
 
                           Text(
                             "Viman Nagar, Platinum Square,opposite to the WNS Company, Near Hyaat Hotel Pune - 431103 ",style: GoogleFonts.poppins(
@@ -123,7 +131,7 @@ class AddressMiddleScreen extends StatelessWidget {
                           ),
 
                           ),
-                          SizedBox(height: 5,),
+                          SizedBox(height: 10,),
                           Row(
                             children: [
                               Text(
@@ -157,7 +165,7 @@ class AddressMiddleScreen extends StatelessWidget {
                                      fontWeight: FontWeight.bold
                                  ),
                                  ),
-
+                               SizedBox(height: 10,),
                                Expanded(
                                  flex: 3,
                                  child: Text(
@@ -171,6 +179,7 @@ class AddressMiddleScreen extends StatelessWidget {
 
                              ],
                            ),
+                          SizedBox(height: 10,),
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Row(
@@ -265,21 +274,22 @@ class AddressMiddleScreen extends StatelessWidget {
                               ),
                               ),
                             ),
-                            Card(
-                              elevation: 10,
-
-                              child:      Padding(
-                                padding: const EdgeInsets.symmetric(vertical: 5.1,horizontal: 2),
-                                child: Center(
-                                  child: Text(
-                                    "Apply Coupon",style: GoogleFonts.poppins(
-                                      color: Colors.black,
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.bold
-                                  ),
-                                  ),
+                            TextButton(
+                                child: Text(
+                                    "Apply Coupon".toUpperCase(),
+                                    style: GoogleFonts.poppins(fontSize: 12,fontWeight: FontWeight.bold)
                                 ),
-                              ),
+                                style: ButtonStyle(
+                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
+                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.purple.shade600),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                          // borderRadius: BorderRadius.circular(18.0),
+                                            side: BorderSide(color: Colors.purple)
+                                        )
+                                    )
+                                ),
+                                onPressed: () => null
                             ),
                           ],
                         ),
